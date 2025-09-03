@@ -28,7 +28,7 @@ import-data/
 
 ### 📦 Install Dependencies
 
-````bash
+```bash
 pip install -r requirements.txt
 
 
@@ -86,36 +86,4 @@ MYSQL_URL=mysql+pymysql://username:password@host:port/dbname
 
 # Optional: For SQL Server
 # SQLSERVER_URL=mssql+pyodbc://username:password@host:port/dbname?driver=ODBC+Driver+17+for+SQL+Server
-
-
-⸻
-
-📝 Git Commit Message Suggestion
-
-When adding new helper/test files and documentation:
-
-git commit -m 'chore: add test_connection script and project README with setup guide'
-
-✅ Tip: Use commit prefixes like feat:, fix:, chore:, docs:, refactor:, etc.
-(Optionally follow Conventional Commits)
-
-⸻
-
-📌 Notes
-	•	Assumes all .txt files are | pipe-delimited.
-	•	All columns created as VARCHAR(255) for simplicity.
-	•	You can customize table schema inference or validations later.
-
-⸻
-
-🤝 Contributions
-
-Feel free to fork and improve. PRs welcome.
-
----
-
-หากพร้อมแล้วลองรันคำสั่งนี้เพื่อเช็กว่าติดตั้งครบหรือยัง:
-
-```bash
-pip install -r requirements.txt
-````
+```
