@@ -5,11 +5,13 @@ from sqlalchemy import create_engine, text
 from sqlalchemy.exc import OperationalError
 from tqdm import tqdm
 import logging
+from dotenv import load_dotenv
+load_dotenv()
 
 # --- CONFIG ---
-FOLDER_PATH = './txt_data'
-MYSQL_URL = 'mysql+pymysql://username:password@url:port/table'  # Connect to MySQL
-LOG_FILE = 'import_log.txt'
+FOLDER_PATH = os.getenv('FOLDER_PATH')
+MYSQL_URL = os.getenv('MYSQL_URL')
+LOG_FILE = os.getenv('LOG_FILE')
 
 # --- LOGGING ---
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format='%(asctime)s - %(message)s')

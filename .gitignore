@@ -5,3 +5,5 @@ __pycache__/
 txt_data/*
 
 import_log*.txt
+
+.env
